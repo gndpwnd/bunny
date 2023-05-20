@@ -1,0 +1,35 @@
+{
+    "hostname": "development-box",
+    "harddrives": [
+        "/dev/nvme0n1"
+    ],
+    "audio": "pipewire",
+    "bootloader": "systemd-bootctl",
+    "custom-commands": [
+        "curl -sSL https://example.com/ansible-setup.sh | bash"
+    ],
+    "filesystem": "ext4",
+    "gfx_driver": "All open-source (default)",
+    "swap": true,
+    "kernels": [
+        "linux"
+    ],
+    "keyboard-language": "us",
+    "mirror-region": "Worldwide",
+    "nic": {
+        "NetworkManager": true,
+        "nic": "Use NetworkManager (necessary to configure internet graphically in GNOME and KDE)"
+    },
+    "ntp": true,
+    "packages": [
+        "docker", 
+        "git", 
+        "wget", 
+        "zsh", 
+        "bash"
+    ],
+    "services": ["docker"],
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
+    "timezone": "UTC"
+}
